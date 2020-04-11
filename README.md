@@ -9,9 +9,9 @@
 ### deploy to kube via helm
 >cd helm/http-redirector
 
-#####for newly install
+##### for newly install
 >helm install <name> .
 
-#####for upgrade
+##### for upgrade
 update version in Chart.yaml 
 >helm upgrade <name> .
