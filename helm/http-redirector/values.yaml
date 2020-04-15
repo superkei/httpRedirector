@@ -35,11 +35,9 @@ securityContext: {}
 
 service:
   enabled: true
-  type: NodePort
-  port: 80
+  type: LoadBalancer
+  port: 30000
   targetPort: 80
-  nodePort: 30000
-  
 
 ingress:
   enabled: false
