@@ -47,6 +47,10 @@ spec:
       nodeSelector:
         {{- toYaml . | nindent 8 }}
       {{- end }}
+      hostAliases:
+      - ip: "23.39.254.99"
+        hostnames: 
+        - "mlprd.api.appledaily.com.hk"
     {{- with .Values.affinity }}
       affinity:
         {{- toYaml . | nindent 8 }}
